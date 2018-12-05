@@ -1,0 +1,32 @@
+<mvc:View 
+	controllerName="com.tcs.ShoppingApp.controller.ProductDetail"
+	xmlns:html="https://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic">
+	<semantic:DetailPage> 
+		<!-- Enough space for your content here -->
+		<Page>	
+			<content>
+				<List class="sapUiResponsiveMargin" width="auto"
+					headerText="Product Form">
+					<InputListItem label="Product ID" >
+						<Text text="{ProductID}" id="productID"/>
+					</InputListItem> 
+					<InputListItem label="Product Name">
+						<Text text="{ProductName}" id="productName"/>
+					</InputListItem>  
+					<InputListItem label="Quantity Per Unit" >
+						<Text text="{QuantityPerUnit}" id="quantity"/>
+					</InputListItem>
+					<InputListItem label="Unit Price">
+							<Text text="{UnitPrice}" id="unitPrice"/>
+					</InputListItem> 
+					<InputListItem label="Units in Stock">
+							<Text text="{UnitsInStock}" id="unitStock"/>
+					</InputListItem> 
+				</List>
+			</content>	
+		</Page>
+	</semantic:DetailPage>
+</mvc:View>

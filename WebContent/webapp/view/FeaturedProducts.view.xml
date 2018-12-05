@@ -1,0 +1,14 @@
+<mvc:View 
+	xmlns:html="https://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic">
+	<semantic:DetailPage> 
+		<!-- Enough space for your content here -->
+		<Page>	
+			<content>
+				<Text text="This is the Featured Page" />
+			</content>	
+		</Page>
+	</semantic:DetailPage>
+</mvc:View>

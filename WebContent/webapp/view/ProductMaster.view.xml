@@ -1,0 +1,19 @@
+<mvc:View 
+	controllerName="com.tcs.ShoppingApp.controller.ProductMaster"
+	xmlns:html="https://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"> 
+	<semantic:MasterPage> 
+		<Page showNavButton="true"
+			navButtonPress="onNavPress" >
+			<List itemPress="onListItemPress" items="{path : 'northWind>/Products'}" id="productList" >
+				<items>
+					<ObjectListItem title="{northWind>ProductName}" type="Active" 
+					custom:to="{northWind>ProductID}" />		
+				</items>
+			</List>
+		</Page>
+	</semantic:MasterPage>
+</mvc:View>

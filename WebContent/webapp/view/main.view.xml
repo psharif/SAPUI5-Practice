@@ -1,0 +1,14 @@
+<mvc:View controllerName="com.tcs.ShoppingApp.controller.main" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	displayBlock="true" xmlns="sap.m">
+	<tnt:ToolHeader>
+		<Button text="Logo" type="Transparent">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="Low" />
+			</layoutData>
+		</Button>
+	</tnt:ToolHeader>
+	<SplitApp id="rootControl" />
+</mvc:View>

@@ -1,0 +1,134 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "com.tcs.ShoppingApp",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"dataSources": {
+			"northWind": {
+				"uri": "https://cors-anywhere.herokuapp.com/https://services.odata.org/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+				  "odataVersion": "2.0"
+				}
+			}
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+
+		]
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.tcs.ShoppingApp.view.main",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.tcs.ShoppingApp.i18n.i18n"
+				}
+			}, 
+			"northWind": {
+				"dataSource": "northWind"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.tcs.ShoppingApp.view",
+				"controlAggregation": "pages",
+				"controlId": "rootControl",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "main",
+					"pattern": "",
+					"target": ["master", "featured"]
+				}, 
+				{
+					"name": "featured",
+					"pattern": "Featured", 
+					"target": ["master", "featured"]
+				}, 
+				{
+					"name": "productMaster", 
+					"pattern": "category/{CategoryID}",
+					"target": ["productMaster", "productDetail" ]
+				}, 
+				{
+					"name": "productDetail", 
+					"pattern": "category/{CategoryID}/product/{ProductID}", 
+					"target": ["productMaster", "productDetail"]
+				}	
+			],
+		    "targets": {
+				"master": {
+					"viewName": "Master",
+					"controlAggregation": "masterPages"
+				}, 
+				"featured": {
+					"viewName": "FeaturedProducts", 
+					"controlAggregation": "detailPages"
+				}, 
+				"productMaster": {
+					"viewName": "ProductMaster", 
+					"controlAggregation": "masterPages"
+				}, 
+				"productDetail": {
+					"viewName": "ProductDetail", 
+					"controlAggregation": "detailPages"
+				}
+			}
+		}
+	}
+}
