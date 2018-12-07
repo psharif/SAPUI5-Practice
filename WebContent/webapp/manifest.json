@@ -20,10 +20,13 @@
 				"settings": {
 				  "odataVersion": "2.0"
 				}
+			},
+			"featuredProductService": {
+				"uri": "./service/featuredProducts.json", 
+				"type": "JSON"
 			}
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -72,6 +75,9 @@
 			}, 
 			"northWind": {
 				"dataSource": "northWind"
+			}, 
+			"featured": {
+				"dataSource": "featuredProductService"
 			}
 		},
 		"resources": {

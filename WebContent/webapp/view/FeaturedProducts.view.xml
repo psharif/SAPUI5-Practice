@@ -1,14 +1,35 @@
 <mvc:View 
+	controllerName="com.tcs.ShoppingApp.controller.FeaturedProducts"
 	xmlns:html="https://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:semantic="sap.m.semantic">
 	<semantic:DetailPage> 
 		<!-- Enough space for your content here -->
-		<Page>	
-			<content>
-				<Text text="This is the Featured Page" />
-			</content>	
-		</Page>
+			<Carousel  loop="true" pageChanged = "handleNextPage" pages="{featuredProducts>/products}" height="350px">
+				<Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+					<headerToolbar>
+						<Toolbar height="3rem">
+							<Title text="Product Name:  {featuredProducts>ProductName}"/>
+							<Title text=""/>
+							<Title text="Price: {featuredProducts>Price}"/>
+							<Title text=""/>
+							<Title text="Product ID: {featuredProducts>ProductID}"/>
+						</Toolbar>
+					</headerToolbar>
+					<content>
+						<FlexBox
+							height="15em"
+							alignItems="Start"
+							justifyContent="Center">
+							<items>
+								<Image src="{featuredProducts>uri}" alt="Example picture of speakers" width="10em" press="onCarouselPress"/>
+							</items>
+						</FlexBox>
+					</content>
+				</Panel>
+			</Carousel>
+			<Panel width="auto" class="sapUiResponsiveMargin" height="350px" id="tileContainer"/>
 	</semantic:DetailPage>
 </mvc:View>

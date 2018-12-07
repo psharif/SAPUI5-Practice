@@ -6,11 +6,11 @@
 	xmlns:semantic="sap.m.semantic"
 	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 	<semantic:MasterPage> 
-		<List itemPress="onListItemPress" items="{path : 'northWind>/Categories'}" >
-			<items >
+		<List itemPress="onListItemPress" items="{path : 'northWind>/Categories'}"  id="categoryList">
+			<items>
 				<!-- custom:to tag is used to attach the category id to the route category/{CategoryID} -->
 				<ObjectListItem title="{northWind>CategoryName}" type="Active" 
-					custom:to="{northWind>CategoryID}"/>		
+					custom:to="{northWind>CategoryID}" />
 			</items>
 		</List>
 	</semantic:MasterPage>
