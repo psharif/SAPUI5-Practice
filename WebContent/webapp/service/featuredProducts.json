@@ -43,7 +43,7 @@
 		},
 		{
 			"ProductID": "6",
-			"Category": "2", 
+			"CategoryID": "2", 
 			"ProductName": "Grandma's Boysenberry Spread", 
 			"uri" : "https://images.unsplash.com/photo-1536598671674-27bfb96e07ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80", 
 			"Price": "$25.00", 
@@ -51,7 +51,7 @@
 		},
 		{
         		"ProductID": "7",
-			"Category": "7", 
+			"CategoryID": "7", 
 			"ProductName": "Uncle Bob's Organic Dried Pears", 
 			"uri" : "http://www.driedfruits.com.cn/images/Dried-Pear-Halves-without-Sugar.JPG", 
 			"Price": "$30.00", 
@@ -59,7 +59,7 @@
 		},
 		{
         		"ProductID": "8",
-			"Category": "2", 
+			"CategoryID": "2", 
 			"ProductName": "Northwoods Cranberry Sauce", 
 			"uri" : "https://images.unsplash.com/photo-1514027769560-17e67d5b5e93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80", 
 			"Price": "$40.00", 
@@ -67,7 +67,7 @@
 		},
 		{
         		"ProductID": "9",
-			"Category": "6", 
+			"CategoryID": "6", 
 			"ProductName": "Mishi Kobe Niku", 
 			"uri" : "http://www.idelish.com/wp-content/uploads/DSC_5529_filtered-L.jpg", 
 			"Price": "$97.00", 
@@ -75,7 +75,7 @@
 		},
 		{
         		"ProductID": "10",
-			"Category": "8", 
+			"CategoryID": "8", 
 			"ProductName": "Ikura", 
 			"uri" : "https://sethlui.com/wp-content/uploads/2018/01/hachikyo-ikura-teppei-singapore.jpg", 
 			"Price": "$31.00", 
@@ -83,7 +83,7 @@
 		},
 		{
         		"ProductID": "11",
-			"Category": "4", 
+			"CategoryID": "4", 
 			"ProductName": "Queso Cabrales", 
 			"uri" : "https://gastronomiaycia.republica.com/wp-content/uploads/2016/08/reconocer_buen_cabrales.jpg", 
 			"Price": "$21.00", 
@@ -91,7 +91,7 @@
 		},
 		{
         		"ProductID": "12",
-			"Category": "4", 
+			"CategoryID": "4", 
 			"ProductName": "Queso Manchego La Pastora", 
 			"uri" : "https://cofradiadelquesomanchegoblog.files.wordpress.com/2016/07/portada-queso-470x260.jpg?w=620&h=343", 
 			"Price": "$38.00", 
@@ -99,7 +99,7 @@
 		},
 		{
         		"ProductID": "13",
-			"Category": "8", 
+			"CategoryID": "8", 
 			"ProductName": "Konbu", 
 			"uri" : "http://blog.sundaysgrocery.com/wp-content/uploads/2017/06/konbu-sundays-grocery.jpg", 
 			"Price": "$6.00", 
@@ -107,7 +107,7 @@
 		},
 		{
         		"ProductID": "14",
-			"Category": "7", 
+			"CategoryID": "7", 
 			"ProductName": "Tofu", 
 			"uri" : "https://www.delishknowledge.com/wp-content/uploads/How-to-Make-Crispy-Tofu4-1-of-1.jpg", 
 			"Price": "$23.25", 
@@ -115,7 +115,7 @@
 		},	
 		{
         		"ProductID": "15",
-			"Category": "2", 
+			"CategoryID": "2", 
 			"ProductName": "Genen Shouyu", 
 			"uri" : "https://s3.amazonaws.com/jconline/jc_soysauce_general_860-560.jpg", 
 			"Price": "$15.50", 
@@ -123,7 +123,7 @@
 		},
 		{
         		"ProductID": "16",
-			"Category": "3", 
+			"CategoryID": "3", 
 			"ProductName": "Pavlova", 
 			"uri" : "https://thebusybaker.ca/wp-content/uploads/2015/02/perfect-pavlova-5.jpg", 
 			"Price": "$17.45", 
@@ -131,7 +131,7 @@
 		},
 		{
         		"ProductID": "17",
-			"Category": "6", 
+			"CategoryID": "6", 
 			"ProductName": "Alice Mutton", 
 			"uri" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mutton_chop.jpg/440px-Mutton_chop.jpg", 
 			"Price": "$39.00", 
@@ -139,7 +139,7 @@
 		},
 		{
         		"ProductID": "18",
-			"Category": "8", 
+			"CategoryID": "8", 
 			"ProductName": "Carnarvon Tigers", 
 			"uri" : "https://www.penang-traveltips.com/0/t-pics/tiger-char-koay-teow-20160306-03.jpg", 
 			"Price": "$62.50", 
@@ -147,7 +147,7 @@
 		},
 		{
         		"ProductID": "19",
-			"Category": "3", 
+			"CategoryID": "3", 
 			"ProductName": "Teatime Chocolate Biscuits", 
 			"uri" : "n-images-1.medium.com/max/1600/0*pu9GL4HEDesBwW73.jpg", 
 			"Price": "$9.20", 
@@ -155,7 +155,7 @@
 		},
 		{
         		"ProductID": "20",
-			"Category": "3", 
+			"CategoryID": "3", 
 			"ProductName": "Sir Rodney's Marmalade", 
 			"uri" : "https://www.daskochrezept.de/sites/default/files/styles/43l/public/rezepte/Tomaten-Marmelade-tomate1200.jpg?itok=nixRGTfE", 
 			"Price": "$81.00", 

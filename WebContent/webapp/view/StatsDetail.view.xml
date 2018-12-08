@@ -1,0 +1,9 @@
+<mvc:View controllerName="com.tcs.ShoppingApp.controller.StatsDetail" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	displayBlock="true" xmlns="sap.m">
+	<Page title="Stats Detail Page"> 
+		<Text text="Stats Detail Page" />
+	</Page>
+</mvc:View>

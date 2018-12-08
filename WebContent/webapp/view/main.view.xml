@@ -4,7 +4,12 @@
 	xmlns:tnt="sap.tnt"
 	displayBlock="true" xmlns="sap.m">
 	<tnt:ToolHeader>
-		<Button text="Logo" type="Transparent">
+		<Button text="Account" type="Transparent" press="navToAccounts">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="Low"/>
+			</layoutData>
+		</Button>
+		<Button text="Shop" type="Transparent" press="navToShop">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="Low" />
 			</layoutData>

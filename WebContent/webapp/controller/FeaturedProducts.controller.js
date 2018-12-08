@@ -6,7 +6,7 @@ sap.ui.define([
 		onInit: function(){
 			this._oRouter = sap.ui.core.UIComponent.getRouterFor(this); 
 			this.tilesCreated = false; 
-		}, 
+		},
 		onBeforeRendering:function(){
 			//Get the array from the model for featured products
 			const products = this.getView().getModel("featured").oData.products;
@@ -57,16 +57,27 @@ sap.ui.define([
 						})
 					]
 				});
-				oTile.attachPress(this.onTilePress);
+				oTile.data("CategoryID", arr[i].CategoryID);
+				oTile.attachPress(this.onTilePress, this);
 				oTileContainer.addContent(oTile);
-				
 			}
 		}, 
-		onTilePress:function(){
-			console.log("Tile Was Pressed");
-		}, 
-		onCarouselPress:function(){
-			console.log("Carousel Was Pressed");
+		onTilePress:function(oEvent){
+			var aSubHeaderSplit = oEvent.getSource().getSubheader().split(" ");
+			var sProductID = aSubHeaderSplit[aSubHeaderSplit.length -1];
+			var sCategoryID = oEvent.getSource().data().CategoryID;
+			this._oRouter.navTo("productDetail", {
+				CategoryID: sCategoryID, 
+				ProductID: sProductID
+			});
+		},
+		onCarouselPress:function(oEvent){
+			var sProductID = oEvent.getSource().data().ProductID;
+			var sCategoryID = oEvent.getSource().data().CategoryID;
+			this._oRouter.navTo("productDetail", {
+				CategoryID: sCategoryID, 
+				ProductID: sProductID
+			});
 		}
 	})	
 });

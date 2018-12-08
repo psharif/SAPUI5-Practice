@@ -1,0 +1,17 @@
+<mvc:View 
+	controllerName="com.tcs.ShoppingApp.controller.AccountMaster"
+	xmlns:html="https://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<semantic:MasterPage> 
+		<List>
+			<items>
+				<ObjectListItem title="Accounts" type="Active" press="onShowAccountDetail"/>
+				<ObjectListItem title="Orders" type="Active" press="onShowOrderDetail"/>
+				<ObjectListItem title="Stats" type="Active" press="onShowStatsDetail"/>
+			</items>
+		</List>
+	</semantic:MasterPage>
+</mvc:View>

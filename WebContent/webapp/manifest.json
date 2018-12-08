@@ -115,7 +115,22 @@
 					"name": "productDetail", 
 					"pattern": "category/{CategoryID}/product/{ProductID}", 
 					"target": ["productMaster", "productDetail"]
-				}	
+				},
+				{
+					"name": "accountDetail", 
+					"pattern": "accounts",
+					"target": ["accountMaster", "accountDetail" ]
+				}, 
+				{
+					"name": "orderDetail", 
+					"pattern": "orders", 
+					"target": ["accountMaster", "orderDetail"]
+				}, 
+				{
+					"name": "statsDetail", 
+					"pattern": "stats", 
+					"target": ["accountMaster", "statsDetail"]
+				} 	
 			],
 		    "targets": {
 				"master": {
@@ -132,6 +147,22 @@
 				}, 
 				"productDetail": {
 					"viewName": "ProductDetail", 
+					"controlAggregation": "detailPages"
+				}, 
+				"accountMaster": {
+					"viewName": "AccountMaster", 
+					"controlAggregation": "masterPages"
+				},
+				"accountDetail": {
+					"viewName": "AccountDetail", 
+					"controlAggregation": "detailPages"
+				},
+				"orderDetail": {
+					"viewName": "OrderDetail", 
+					"controlAggregation": "detailPages"
+				},
+				"statsDetail": {
+					"viewName": "StatsDetail", 
 					"controlAggregation": "detailPages"
 				}
 			}
